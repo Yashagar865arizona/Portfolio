@@ -11,6 +11,9 @@
 });
 
 function initTARS() {
+    // Check if device is mobile
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    
     document.getElementById('tars-section').innerHTML = `
         <div class="project featured-project">
             <div class="project-content">
@@ -48,11 +51,11 @@ function initTARS() {
         </div>
     `;
 
-    generateTARSVisualization();
+    generateTARSVisualization(isMobile);
 }
 
 // TARS SVG Generation
-function generateTARSVisualization() {
+function generateTARSVisualization(isMobile) {
     const svg = d3.select("#tars-container")
         .append("svg")
         .attr("viewBox", "0 0 400 400")
@@ -418,4 +421,27 @@ function generateTARSVisualization() {
             .append("title")
             .text(tooltip.text);
     });
+
+    // Adjust animation complexity for mobile
+    if (isMobile) {
+        // Reduce number of particles
+        const particleCount = Math.floor(100 * 0.6);
+        // Increase animation intervals to improve performance
+        const animationInterval = 2000 * 1.5;
+        
+        // Add touch event listeners for interactive elements
+        svg.selectAll(".interactive-element")
+            .on("touchstart", function() {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 0.8);
+            })
+            .on("touchend", function() {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 1);
+            });
+    }
 }
