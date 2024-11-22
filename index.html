@@ -5,195 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-cards.css">
+    <link rel="stylesheet" href="css/tars.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="nav-container">
-        <div class="nav-logo">
-            <div class="logo-vector">
-                <div class="logo-hexagon"></div>
-                <div class="logo-inner">
-                    <span class="logo-text">YA</span>
-                </div>
-            </div>
-        </div>
-        <div class="hamburger">
-            <span></span><span></span><span></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="nav-section"></div>
+    <div id="landing-section"></div>
+    <div id="about-section"></div>
+    <div id="tars-section"></div>
+    <div id="projects-section"></div>
+    <div id="contact-section"></div>
 
-    <section id="landing-page">
-        <div class="logo-container">
-            <div class="logo-vector">
-                <div class="logo-hexagon"></div>
-                <div class="logo-inner">
-                    <span class="logo-text">YA</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-content">
-            <h1 class="main-title">Hi, I'm <span class="highlight">Yash</span></h1>
-            <p class="subtitle">AI Engineer & Full Stack Developer</p>
-            <p class="description">Specializing in AI-powered applications and innovative web solutions</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p class="lead-text">Creating intelligent solutions that push the boundaries of technology.</p>
-                <p>As an AI Engineer and Full Stack Developer, I specialize in developing advanced AI applications and modern web solutions. My flagship project, TARS, demonstrates my ability to create sophisticated AI systems that can understand, learn, and interact naturally with users.</p>
-                <p>With a deep understanding of both AI/ML technologies and full-stack development, I bridge the gap between complex AI systems and user-friendly applications.</p>
-            </div>
-            <div class="skills-container">
-                <div class="skill">
-                    <h3>AI & Machine Learning</h3>
-                    <ul class="skill-list">
-                        <li>Natural Language Processing</li>
-                        <li>OpenAI GPT Integration</li>
-                        <li>Machine Learning Models</li>
-                        <li>Neural Networks</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Backend Development</h3>
-                    <ul class="skill-list">
-                        <li>Python & FastAPI</li>
-                        <li>Node.js & Express</li>
-                        <li>RESTful APIs</li>
-                        <li>Database Architecture</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Frontend & Tools</h3>
-                    <ul class="skill-list">
-                        <li>React & Next.js</li>
-                        <li>Docker & Kubernetes</li>
-                        <li>AWS & Cloud Services</li>
-                        <li>CI/CD & DevOps</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="project-gallery">
-            <!-- TARS Project -->
-            <div class="project featured-project">
-                <div class="project-image">
-                    <img src="assets/images/tars-project.jpg" alt="TARS AI Assistant">
-                </div>
-                <div class="project-info">
-                    <div class="project-header">
-                        <span class="featured-label">Featured Project</span>
-                        <h3>TARS AI Assistant</h3>
-                    </div>
-                    <p class="project-description">
-                        An advanced AI-powered assistant built with Python, featuring natural language processing capabilities and intelligent automation. Demonstrates expertise in AI/ML and system architecture.
-                    </p>
-                    <div class="project-highlights">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Natural Language Processing</li>
-                            <li>Python-based Architecture</li>
-                            <li>AI/ML Integration</li>
-                            <li>System Automation</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>AI/ML</span>
-                        <span>NLP</span>
-                        <span>System Design</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yashagar865arizona/trs-main" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- AQI VS EV Project -->
-            <div class="project">
-                <div class="project-image">
-                    <img src="assets/images/aqi-ev-project.jpg" alt="AQI VS EV Analysis">
-                </div>
-                <div class="project-info">
-                    <h3>AQI VS EV Analysis</h3>
-                    <p class="project-description">A data analysis project exploring the relationship between Air Quality Index (AQI) and Electric Vehicle adoption. Uses Jupyter Notebook for comprehensive data analysis and visualization.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Jupyter Notebook</span>
-                        <span>Data Analysis</span>
-                        <span>Visualization</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yashagar865arizona/AQI-VS-EV" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Breakout Game -->
-            <div class="project">
-                <div class="project-image">
-                    <img src="assets/images/breakout-game.jpg" alt="Breakout Game">
-                </div>
-                <div class="project-info">
-                    <h3>Breakout Game</h3>
-                    <p class="project-description">A Python implementation of the classic Breakout arcade game. Features smooth gameplay mechanics, collision detection, and score tracking.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Game Development</span>
-                        <span>Graphics</span>
-                        <span>User Interface</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yashagar865arizona/Breakout" class="btn" target="_blank">
-                            <i class="fab fa-github"></i> View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">Let's Connect</h2>
-        <div class="contact-content">
-            <p class="lead-text">Interested in AI development or have a project in mind? Let's talk!</p>
-            <div class="contact-links">
-                <a href="mailto:yash.agarwal.jobs@gmail.com" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i>
-                    Email Me
-                </a>
-                <a href="https://github.com/Yashagar865arizona" class="btn" target="_blank">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/yashagarwal865/" class="btn" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <script src="js/script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tars.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

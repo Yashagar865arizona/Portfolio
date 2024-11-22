@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div include-html="components/head.html"></div>
+    <script src="js/include.js"></script>
+</head>
+<body>
+    <div include-html="components/nav.html"></div>
+    <div include-html="components/projects.html"></div>
+    <div include-html="components/contact.html"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Load all components when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            includeHTML();
+        });
+    </script>
+</body>
+</html>
