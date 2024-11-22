@@ -1,6 +1,6 @@
 export function createAQIEVSvg() {
     return `
-        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
             <!-- Background Grid -->
             <defs>
                 <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
